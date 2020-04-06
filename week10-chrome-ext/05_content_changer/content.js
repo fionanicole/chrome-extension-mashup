@@ -16,6 +16,7 @@
 //   }
 // ],
 
+console.log("extension is running");
 
 // Look for all elements that are an "avatar" or "gravatar"
 var avatars = document.getElementsByClassName('avatar');
