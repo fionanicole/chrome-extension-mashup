@@ -1,18 +1,14 @@
 {
   "manifest_version": 2,
   "name": "growgarden",
-  "version": "1.0",
-  "description": "This extensions alters the look and content of a google images page by growing plants all over it.",
-  "content_scripts": [
-    {
-      "matches": [
-        "https://www.google.com/search?q=concrete&tbm=isch&ved=2ahUKEwij2oTEu8roAhXsAt8KHW9HBvQQ2-cCegQIABAA&oq&gs_lcp=CgNpbWcQARgBMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnUKguWKguYNc_aAFwAHgAgAEAiAEAkgEAmAEAoAEBqgELZ3dzLXdpei1pbWewAQo&sclient=img&ei=cTuGXuNd7IX8Bu-OmaAP&bih=760&biw=1054&rlz=1C1CHBF_enUS886US886&hl=en*",
-        "http://www.google.com/search?q=concrete&tbm=isch&ved=2ahUKEwij2oTEu8roAhXsAt8KHW9HBvQQ2-cCegQIABAA&oq&gs_lcp=CgNpbWcQARgBMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnUKguWKguYNc_aAFwAHgAgAEAiAEAkgEAmAEAoAEBqgELZ3dzLXdpei1pbWewAQo&sclient=img&ei=cTuGXuNd7IX8Bu-OmaAP&bih=760&biw=1054&rlz=1C1CHBF_enUS886US886&hl=en*"
-      ],
-      "js": ["content.js"]
-    }
-  ],
+  "version": "1",
+  "description": "This extensions alters the look and content of a google images page.",
+  "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "all_frames": true,
+      "js": ["growgarden.js"]
+  }],
   "web_accessible_resources": [
-      "images/cornflower.jpg"
+    "images/cornflower.jpg"
   ]
-}
+  }
