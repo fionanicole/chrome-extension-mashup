@@ -39,6 +39,7 @@ for (var i = 0; i < everything.length; i++) {
     if (tokens[j].charAt(0) !== '<') {
       // Now replace the word "the" with "the" spanned with the class "redact"
       tokens[j] = tokens[j].replace(/\bgrow\b/gi,'<span class="redact">grow</span>');
+      tokens[j] = tokens[j].replace(/\bflowers\b/gi,'<span class="floral">flowers</span>');
     }
   }
   // Put everything back in
