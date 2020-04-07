@@ -2,17 +2,18 @@
   "manifest_version": 2,
   "name": "growgarden",
   "version": "1",
-  "description": "This extensions alters the look and content of a google images page.",
+  "description": "This extensions alters the look and content of a google images page and highlights the word grow on a page.",
   "content_scripts": [
     {
       "matches": [
-        "http://google.com/*",
-        "https://google.com/*",
-        "http://github.com/*",
-        "https://github.com/*"
+        "<all_urls>"
       ],
-      "js": ["growgarden.js"]
+      "js": ["growgarden.js"],
+      "css": ["grow.css"]
     }
   ],
-  "web_accessible_resources": ["images/cornflower.jpg"]
+  "web_accessible_resources": [
+    "images/cornflower.jpg",
+    "images/rose.gif"
+  ]
 }
